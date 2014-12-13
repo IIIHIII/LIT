@@ -1,0 +1,87 @@
+%%% -*-LaTeX-*-
+%%% ====================================================================
+%%%  @LaTeX-file{
+%%%     author          = "Herbert H. H. Homeier",
+%%%     version         = "1.06",
+%%%     date            = "11 May 2013",
+%%%     time            = "12:10:05 MDT",
+%%%     filename        = "homeier-herbert-h-h.ltx",
+%%%     address         = "Universitaet Regensburg
+%%%                        Institut fuer Physikalische und Theoretische Chemie
+%%%                        Universitaetsstr. 31
+%%%                        D-93040 Regensburg
+%%%                        Germany",
+%%%     telephone       = "+49-941-943 4720",
+%%%     FAX             = "+49-941-943 4719",
+%%%     URL             = "http://www.chemie.uni-regensburg.de/%7Ehoh05008/index.html",
+%%%     checksum        = "45690 87 304 3277",
+%%%     email           = "herbert.homeier@na-net.ornl.gov (Internet)",
+%%%     codetable       = "ISO/ASCII",
+%%%     keywords        = "bibliography, BibTeX",
+%%%     license         = "public domain",
+%%%     supported       = "yes",
+%%%     docstring       = "This is a LaTeX wrapper file for typesetting
+%%%                        homeier-herbert-h-h.bib,
+%%%                        a bibliography of publications of
+%%%                        Herbert H. H. Homeier.
+%%%
+%%%                        This file is available as part of the BibNet
+%%%                        Project.  The master copy is available for
+%%%                        public access on ftp.math.utah.edu in the
+%%%                        directory tree /pub/bibnet/authors.  It is
+%%%                        mirrored to netlib.bell-labs.com in the directory
+%%%                        tree /netlib/bibnet/authors, from which it is
+%%%                        available via anonymous ftp and the Netlib
+%%%                        service.
+%%%
+%%%                        The checksum field above contains a CRC-16
+%%%                        checksum as the first value, followed by the
+%%%                        equivalent of the standard UNIX wc (word
+%%%                        count) utility output of lines, words, and
+%%%                        characters.  This is produced by Robert
+%%%                        Solovay's checksum utility.",
+%%%  }
+%%% ====================================================================
+
+\documentstyle[bibmods,bibnames,path,showtags,twocolumn]{article}
+
+\ifx \undefined \mathcal \def \mathcal #1{{\cal #1}} \fi
+
+\pagestyle{headings}
+
+\title{A Bibliography of Publications of Herbert H. H. Homeier}
+
+\author{%
+        Herbert H. H. Homeier\\
+        Universit\"at Regensburg\\
+        Institut fuer Physikalische und Theoretische Chemie\\
+        Universit\"atsstr. 31\\
+        D-93040 Regensburg\\
+        Germany\\[\medskipamount]
+        Tel: +49-941-943 4720\\
+        FAX: +49-941-943 4719\\[\medskipamount]
+        E-mail: herbert.homeier@na-net.ornl.gov (Internet)
+}
+
+\date{11 May 2013 \\
+Version 1.06}
+
+\begin{document}
+\nocite{*}
+\bibliographystyle{is-alpha}
+\maketitle
+
+  \begin{abstract}
+This bibliography records publications of Herbert H. H. Homeier.
+  \end{abstract}
+
+\section*{Title word cross-reference}
+
+\begin{raggedright}
+\parskip = \baselineskip
+\input{\jobname.twx}
+\end{raggedright}
+
+\bibliography{\jobname}
+
+\end{document}
